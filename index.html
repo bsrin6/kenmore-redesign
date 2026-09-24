@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenmore redesign prototypes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#0C0C0B;color:#EDEAE3;font-family:Montserrat,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;display:flex;align-items:center}
+main{width:100%;max-width:1100px;margin:0 auto;padding:48px 20px}
+p.k{font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#948F86;margin:0 0 14px}
+h1{font-weight:300;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 36px}
+ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+a{display:flex;flex-direction:column;gap:12px;min-height:220px;padding:28px;text-decoration:none;color:inherit;border:1px solid rgba(209,204,191,.2);transition:border-color .2s,transform .3s}
+a:hover,a:focus-visible{border-color:#D1CCBF;transform:translateY(-3px)}
+a:focus-visible{outline:2px solid #5DB8E8;outline-offset:3px}
+a b{font-size:1.5rem;font-weight:300}
+a.v2{border-radius:14px;background:#181A1D;border-color:rgba(255,255,255,.1)}
+a.v2 b{font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+a small{color:#B9B4AA;font-size:.92rem;line-height:1.5}
+a span{margin-top:auto;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+footer{margin-top:28px;font-size:.84rem;color:#948F86}
+@media (max-width:640px){ul{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<main>
+  <p class="k">Kenmore &middot; shopping redesign &middot; internal prototypes</p>
+  <h1>Two connected directions</h1>
+  <ul>
+    <li><a href="v1/index.html"><b>V1 &middot; The Considered Home</b><small>Dark editorial layout with carbon and heritage tones and light-weight type. Two-pane mega menu, sidebar filters, split product pages with a vertical gallery, and a restrained hero parallax.</small><span>Open V1 &rarr;</span></a></li>
+    <li><a class="v2" href="v2/index.html"><b>V2 &middot; Made for Real Life</b><small>Dark, product-led layout in graphite with Kenmore blue. All-column mega menu, subcategory chips, a horizontal filter bar, a compare page, full-width galleries, stat tiles and a sticky buy bar.</small><span>Open V2 &rarr;</span></a></li>
+  </ul>
+  <footer>Both prototypes share one catalog of 65 real Kenmore products (shared/data.js). Product images load from Kenmore&rsquo;s servers, so stay online while reviewing. See README.md and SOURCES.md.</footer>
+</main>
+</body>
+</html>

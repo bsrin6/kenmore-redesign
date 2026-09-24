@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenmore · Made for Real Life (Prototype V2)</title>
+<meta name="description" content="Kenmore shopping prototype V2: a dark, product-led redesign of the homepage, category listings and product pages.">
+<script>document.documentElement.classList.add('anim');setTimeout(function(){if(!window.KM_READY)document.documentElement.classList.remove('anim')},2500);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20zM12 10v4M12 17v.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to main content</a>
+<noscript><div class="wrap" style="padding:24px">This prototype needs JavaScript. You can browse the live site at <a href="https://www.kenmore.com/">kenmore.com</a>.</div></noscript>
+<div id="page">
+  <div class="util"><div class="wrap">
+    <ul aria-label="Owner shortcuts"><li><a href="https://www.kenmore.com/productregistration" target="_blank" rel="noopener" data-ext>Register a product</a></li><li><a href="https://www.searshomeservices.com/scheduler/shs?partner_source=kenmore" target="_blank" rel="noopener" data-ext>Schedule a repair</a></li><li><a href="https://www.searspartsdirect.com/brand/0582/kenmore-parts" target="_blank" rel="noopener" data-ext>Parts</a></li></ul>
+    <ul class="ul-r" aria-label="Kenmore sites"><li><a href="https://www.kenmore.com/livemore" target="_blank" rel="noopener" data-ext>livemore&trade;</a></li><li><a href="https://www.kenmore.com/new-ventures" target="_blank" rel="noopener" data-ext>New Ventures</a></li></ul>
+  </div></div>
+  <header class="hdr ld" id="hdr" style="--i:0">
+    <div class="wrap hdr-in">
+      <a class="logo" href="#/" aria-label="Kenmore home"><img id="logoImg" alt="Kenmore" width="120" height="22"></a>
+      <button type="button" class="pbtn" id="megaBtn" aria-expanded="false" aria-controls="mega"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg>Products <svg class="i" aria-hidden="true"><use href="#i-down"/></svg></button>
+      <form class="hs" role="search" id="hsForm" autocomplete="off">
+        <label class="sr-only" for="hsIn">Search by product name or model number</label>
+        <div class="box"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><input id="hsIn" type="search" placeholder="Search products or model #" aria-controls="drop" aria-expanded="false" aria-autocomplete="list"><button class="go" type="submit">Search</button></div>
+        <div class="drop" id="drop" hidden></div>
+      </form>
+      <nav class="hlinks" aria-label="Primary">
+        <a href="#/?to=buy" data-to="buy" data-spy="buy"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>Where to Buy</span></a>
+        <a href="#/?to=support" data-to="support" data-spy="support"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span>Customer Care</span></a>
+        <a href="https://www.kenmore.com/use-and-care-guide-search" target="_blank" rel="noopener" data-ext><svg class="i" aria-hidden="true"><use href="#i-book"/></svg><span>Manuals</span><span class="sr-only"> (opens kenmore.com in a new tab)</span></a>
+      </nav>
+      <div class="m-right only-m"><a class="ibtn" href="#/?to=buy" data-to="buy" aria-label="Where to buy"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></a><button type="button" class="ibtn" id="menuBtn" aria-label="Open menu" aria-haspopup="dialog"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button></div>
+    </div>
+    <div class="mega" id="mega" role="region" aria-label="Products"><div class="wrap"><div class="mega-in" id="megaIn"></div><div class="mfoot" id="mfoot"></div></div></div>
+  </header>
+  <main id="main"><div id="app"></div></main>
+  <footer class="foot" id="foot"></footer>
+</div>
+<div class="cbar" id="cbar" role="region" aria-label="Compare products" aria-live="polite"></div>
+<div class="buybar" id="buybar" aria-hidden="true"></div>
+<dialog class="dlg-sheet" id="dlgFilters" aria-labelledby="fsT"><div class="sheet"><div class="sheet-top"><h2 class="H3" id="fsT">Filter &amp; sort</h2><button type="button" class="x" data-close aria-label="Close filters"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button></div><div class="sheet-body" id="fsBody"></div><div class="sheet-foot"><button type="button" class="btn btn--line" id="fsClear">Clear all</button><button type="button" class="btn" data-close id="fsShow">Show results</button></div></div></dialog>
+<dialog class="dlg-menu" id="dlgMenu" aria-label="Menu"><div class="menu" id="menuBody"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../shared/data.js"></script>
+<script src="../shared/core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
